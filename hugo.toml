@@ -1,0 +1,4 @@
+baseURL = "https://go-ruby-fsctl.github.io/"
+languageCode = "en-us"
+title = "go-ruby-fsctl"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]

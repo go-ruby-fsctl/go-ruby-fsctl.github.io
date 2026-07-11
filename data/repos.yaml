@@ -1,0 +1,2 @@
+items:
+  - { name: "fsctl", kind: "adapter", desc: "Reflective adapter over the go-fsctl family (loop/dm/btrfs/zfs) of Linux kernel-ioctl wrappers, returning Ruby-shaped values." }
