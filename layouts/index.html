@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — pure-Go core of the Ruby fsctl gem</title>
 <meta name="description" content="The pure-Go, Ruby-runtime-independent core of the Ruby fsctl gem: a reflective adapter over the go-fsctl family (loop/dm/btrfs/zfs) of pure-Go Linux kernel-ioctl wrappers, returning Ruby-shaped values. CGO_ENABLED=0, 100% statement coverage.">
 <style>
