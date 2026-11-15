@@ -41,11 +41,9 @@
   <div class="hero"><div class="wrap">
     <div>
       <h1 class="head">go-ruby-fsctl</h1>
-      <p class="sub">Pure-Go core of the Ruby <code>fsctl</code> gem — Linux <strong>dm / btrfs / zfs / loop</strong> ioctls.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="https://go-ruby-fsctl.github.io/docs/">{{ partial "icons/book.html" . }}Documentation</a>
-        <a class="btn btn-ghost" href="https://github.com/go-ruby-fsctl">{{ partial "icons/github.html" . }}GitHub</a>
-      </div>
+      <p class="sub">{{ if partial "mantra-on.html" . }}Go{{ else }}Pure-Go{{ end }} core of the Ruby <code>fsctl</code> gem — Linux <strong>dm / btrfs / zfs / loop</strong> ioctls.</p>
+      {{/* [[params.cta]] in hugo.toml: the kit renders the row */}}
+      {{ partial "cta.html" . }}
       <div class="trust">{{ if not (partial "mantra-on.html" $) }}<span class="pill">CGO_ENABLED=0</span>{{ end }}<span class="pill">Ruby-shaped values</span><span class="pill">reflective Call dispatch</span><span class="pill">loop · dm · btrfs · zfs</span><span class="pill">100% coverage</span>{{ if not (partial "mantra-on.html" $) }}<span class="pill">BSD-3-Clause</span>{{ end }}</div>
     </div>
     {{ partial "hero-carousel.html" . }}
